@@ -5,6 +5,10 @@
 //  Created by Karl H Kuhn on 2/6/17.
 //  Copyright © 2017 Karl Kuhn. All rights reserved.
 //
+// This Controller displays all 3 compoents of the Cocktail Detail:
+// Header: Has Cocktail Image and Title, and SegmentedController that changes the IngredientsAndNotesCell
+// IngredientsAndNotes: Displays either Ingredients or Notes based on Header Cell - SegmentedControl Selection.
+// 
 
 import UIKit
 
@@ -28,7 +32,7 @@ class CocktailDetailController: UICollectionViewController, UICollectionViewDele
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(CocktailDetailHeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
-        collectionView?.register(IngredientsCell.self, forCellWithReuseIdentifier: ingredientsId)
+        collectionView?.register(IngredientsAndNotesCell.self, forCellWithReuseIdentifier: ingredientsId)
         collectionView?.register(NotesCell.self, forCellWithReuseIdentifier: notesId)
         collectionView?.register(CocktailImagesCell.self, forCellWithReuseIdentifier: imagesViewId)
         
@@ -57,14 +61,17 @@ class CocktailDetailController: UICollectionViewController, UICollectionViewDele
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.item == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ingredientsId, for: indexPath) as! IngredientsAndNotesCell
+
             switch selectedSegment {
-            
             case 1:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: notesId, for: indexPath) as! NotesCell
+                cell.textView.text = "Enter Notes:"
+                cell.textView.isEditable = true
                 return cell
+                
             default:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ingredientsId, for: indexPath) as! IngredientsCell
-                cell.textView.attributedText = ingredientsAttributedText()
+                cell.textView.attributedText = ingredientsAsAttributedText()
+                cell.textView.isEditable = false
                 return cell
             }
         } else {
@@ -78,7 +85,7 @@ class CocktailDetailController: UICollectionViewController, UICollectionViewDele
     }
     
     
-    private func ingredientsAttributedText() -> NSAttributedString {
+    private func ingredientsAsAttributedText() -> NSAttributedString {
         let attributedText = NSMutableAttributedString(string: "Ingredients\n\n", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)])
         let style = NSMutableParagraphStyle()
         let range = NSRange(location: 0, length: attributedText.string.count)
@@ -86,7 +93,7 @@ class CocktailDetailController: UICollectionViewController, UICollectionViewDele
         
         //Get Ingredient Items
         if let cocktailIngredientsDict = currentCocktail?.ingredientDict as? [String: Double] {
-            let ingredientNames = Array(cocktailIngredientsDict.keys)
+            let ingredientNames = Array(cocktailIngredientsDict.keys).sorted()
             
             //Format based on type of Ingredient
             for index in 0..<cocktailIngredientsDict.count {

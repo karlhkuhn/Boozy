@@ -5,6 +5,7 @@
 //  Created by Karl H Kuhn on 3/3/17.
 //  Copyright © 2017 Karl Kuhn. All rights reserved.
 //
+// This file is the top 3rd of the Screen - CocktailDetailView.  The segmentedControl effects the second 3rd of the screen "IngredientsCell", and displays the ingredients of the cocktail or notes provided by the user.
 
 import UIKit
 

@@ -5,6 +5,8 @@
 //  Created by Karl H Kuhn on 3/3/17.
 //  Copyright © 2017 Karl Kuhn. All rights reserved.
 //
+//
+// Base Class for all Boozy collectionView Objects.
 
 import UIKit
 

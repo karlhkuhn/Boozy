@@ -8,8 +8,8 @@
 
 import UIKit
 
-class IngredientsCell: BaseCellDetail {
-	
+class IngredientsAndNotesCell: BaseCellDetail {
+    
 	let textView: UITextView = {
 		let tv = UITextView()
 		tv.text = "TEMP TEXT"
@@ -31,8 +31,5 @@ class IngredientsCell: BaseCellDetail {
 		addConstraintsWithFormat(format: "V:|-4-[v0]-4-|", views: textView)
 		addConstraintsWithFormat(format: "H:|[v0]|", views: dividerView)
 		addConstraintsWithFormat(format: "V:[v0(2)]|", views: dividerView)
-		
-		textView.isEditable = false
-
 	}
 }
