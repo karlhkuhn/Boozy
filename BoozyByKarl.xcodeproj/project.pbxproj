@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48A373311E40482100498415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373301E40482100498415 /* AppDelegate.swift */; };
+		48A373331E40482100498415 /* MainCocktailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373321E40482100498415 /* MainCocktailsController.swift */; };
+		48A373361E40482100498415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A373341E40482100498415 /* Main.storyboard */; };
+		48A373391E40482100498415 /* BoozyByKarl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48A373371E40482100498415 /* BoozyByKarl.xcdatamodeld */; };
+		48A3733B1E40482100498415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A3733A1E40482100498415 /* Assets.xcassets */; };
+		48A3733E1E40482100498415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A3733C1E40482100498415 /* LaunchScreen.storyboard */; };
+		48A3734B1E4048E900498415 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373491E4048E900498415 /* CategoryCell.swift */; };
+		48A373581E405CAE00498415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A373571E405CAE00498415 /* Foundation.framework */; };
+		48B7718D1E47A99200DC373B /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B771871E47A99200DC373B /* Ingredient+CoreDataClass.swift */; };
+		48B7718E1E47A99200DC373B /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B771881E47A99200DC373B /* Ingredient+CoreDataProperties.swift */; };
+		48B7718F1E47A99200DC373B /* Cocktail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B771891E47A99200DC373B /* Cocktail+CoreDataClass.swift */; };
+		48B771901E47A99200DC373B /* Cocktail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7718A1E47A99200DC373B /* Cocktail+CoreDataProperties.swift */; };
+		48B771911E47A99200DC373B /* CocktailCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7718B1E47A99200DC373B /* CocktailCategory+CoreDataClass.swift */; };
+		48B771921E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7718C1E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift */; };
+		48D08D321E48403300C6F633 /* CocktailDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D08D311E48403300C6F633 /* CocktailDetailController.swift */; };
+		48D08D341E4906EB00C6F633 /* DataFileInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D08D331E4906EA00C6F633 /* DataFileInitializer.swift */; };
+		48F158461E69C05500F06CA3 /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F158451E69C05500F06CA3 /* NotesCell.swift */; };
+		48F1584A1E69C09500F06CA3 /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F158491E69C09500F06CA3 /* IngredientsCell.swift */; };
+		48F1584C1E69C7AC00F06CA3 /* CocktailDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1584B1E69C7AC00F06CA3 /* CocktailDetailHeaderCell.swift */; };
+		48F1584E1E69C7D100F06CA3 /* CocktailImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1584D1E69C7D100F06CA3 /* CocktailImagesCell.swift */; };
+		48F158501E69C86500F06CA3 /* BaseCellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1584F1E69C86500F06CA3 /* BaseCellDetail.swift */; };
+		48F158521E69CB7700F06CA3 /* CocktailDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F158511E69CB7700F06CA3 /* CocktailDetailImageCell.swift */; };
+		48F22E311E4B6972002F5F67 /* MainWineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F22E301E4B6972002F5F67 /* MainWineController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48A3732D1E40482100498415 /* BoozyByKarl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoozyByKarl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A373301E40482100498415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48A373321E40482100498415 /* MainCocktailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsController.swift; sourceTree = "<group>"; };
+		48A373351E40482100498415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48A373381E40482100498415 /* BoozyByKarl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoozyByKarl.xcdatamodel; sourceTree = "<group>"; };
+		48A3733A1E40482100498415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48A3733D1E40482100498415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48A3733F1E40482100498415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A373491E4048E900498415 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryCell.swift; path = ../CategoryCell.swift; sourceTree = "<group>"; };
+		48A373571E405CAE00498415 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48B771871E47A99200DC373B /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataClass.swift"; path = "../Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48B771881E47A99200DC373B /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataProperties.swift"; path = "../Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		48B771891E47A99200DC373B /* Cocktail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Cocktail+CoreDataClass.swift"; path = "../Cocktail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48B7718A1E47A99200DC373B /* Cocktail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Cocktail+CoreDataProperties.swift"; path = "../Cocktail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		48B7718B1E47A99200DC373B /* CocktailCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CocktailCategory+CoreDataClass.swift"; path = "../CocktailCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48B7718C1E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CocktailCategory+CoreDataProperties.swift"; path = "../CocktailCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		48D08D311E48403300C6F633 /* CocktailDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailDetailController.swift; sourceTree = "<group>"; };
+		48D08D331E4906EA00C6F633 /* DataFileInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFileInitializer.swift; sourceTree = "<group>"; };
+		48F158451E69C05500F06CA3 /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		48F158491E69C09500F06CA3 /* IngredientsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
+		48F1584B1E69C7AC00F06CA3 /* CocktailDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailDetailHeaderCell.swift; sourceTree = "<group>"; };
+		48F1584D1E69C7D100F06CA3 /* CocktailImagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailImagesCell.swift; sourceTree = "<group>"; };
+		48F1584F1E69C86500F06CA3 /* BaseCellDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellDetail.swift; sourceTree = "<group>"; };
+		48F158511E69CB7700F06CA3 /* CocktailDetailImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailDetailImageCell.swift; sourceTree = "<group>"; };
+		48F22E301E4B6972002F5F67 /* MainWineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWineController.swift; path = ../MainWineController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48A3732A1E40482100498415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A373581E405CAE00498415 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48A373241E40482100498415 = {
+			isa = PBXGroup;
+			children = (
+				48A3732F1E40482100498415 /* BoozyByKarl */,
+				48A3732E1E40482100498415 /* Products */,
+				48A373561E405CAE00498415 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48A3732E1E40482100498415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A3732D1E40482100498415 /* BoozyByKarl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48A3732F1E40482100498415 /* BoozyByKarl */ = {
+			isa = PBXGroup;
+			children = (
+				48A373301E40482100498415 /* AppDelegate.swift */,
+				48F22E2F1E4B660C002F5F67 /* Wine */,
+				48F22E2E1E4B65F3002F5F67 /* Cocktails */,
+				48D08D351E49080B00C6F633 /* Data */,
+				48A3733A1E40482100498415 /* Assets.xcassets */,
+				48A3733C1E40482100498415 /* LaunchScreen.storyboard */,
+				48A3733F1E40482100498415 /* Info.plist */,
+				48A373341E40482100498415 /* Main.storyboard */,
+			);
+			path = BoozyByKarl;
+			sourceTree = "<group>";
+		};
+		48A373561E405CAE00498415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A373571E405CAE00498415 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48D08D351E49080B00C6F633 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				48A373371E40482100498415 /* BoozyByKarl.xcdatamodeld */,
+				48D08D331E4906EA00C6F633 /* DataFileInitializer.swift */,
+				48B771871E47A99200DC373B /* Ingredient+CoreDataClass.swift */,
+				48B771881E47A99200DC373B /* Ingredient+CoreDataProperties.swift */,
+				48B771891E47A99200DC373B /* Cocktail+CoreDataClass.swift */,
+				48B7718A1E47A99200DC373B /* Cocktail+CoreDataProperties.swift */,
+				48B7718B1E47A99200DC373B /* CocktailCategory+CoreDataClass.swift */,
+				48B7718C1E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		48F158441E69C03700F06CA3 /* DetailControllerCells */ = {
+			isa = PBXGroup;
+			children = (
+				48D08D311E48403300C6F633 /* CocktailDetailController.swift */,
+				48F1584F1E69C86500F06CA3 /* BaseCellDetail.swift */,
+				48F1584B1E69C7AC00F06CA3 /* CocktailDetailHeaderCell.swift */,
+				48F158491E69C09500F06CA3 /* IngredientsCell.swift */,
+				48F158451E69C05500F06CA3 /* NotesCell.swift */,
+				48F1584D1E69C7D100F06CA3 /* CocktailImagesCell.swift */,
+				48F158511E69CB7700F06CA3 /* CocktailDetailImageCell.swift */,
+			);
+			name = DetailControllerCells;
+			sourceTree = "<group>";
+		};
+		48F22E2E1E4B65F3002F5F67 /* Cocktails */ = {
+			isa = PBXGroup;
+			children = (
+				48A373321E40482100498415 /* MainCocktailsController.swift */,
+				48A373491E4048E900498415 /* CategoryCell.swift */,
+				48F158441E69C03700F06CA3 /* DetailControllerCells */,
+			);
+			name = Cocktails;
+			sourceTree = "<group>";
+		};
+		48F22E2F1E4B660C002F5F67 /* Wine */ = {
+			isa = PBXGroup;
+			children = (
+				48F22E301E4B6972002F5F67 /* MainWineController.swift */,
+			);
+			name = Wine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48A3732C1E40482100498415 /* BoozyByKarl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A373421E40482100498415 /* Build configuration list for PBXNativeTarget "BoozyByKarl" */;
+			buildPhases = (
+				48A373291E40482100498415 /* Sources */,
+				48A3732A1E40482100498415 /* Frameworks */,
+				48A3732B1E40482100498415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoozyByKarl;
+			productName = BoozyByKarl;
+			productReference = 48A3732D1E40482100498415 /* BoozyByKarl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48A373251E40482100498415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Karl Kuhn";
+				TargetAttributes = {
+					48A3732C1E40482100498415 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SG455MX5PS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 48A373281E40482100498415 /* Build configuration list for PBXProject "BoozyByKarl" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 48A373241E40482100498415;
+			productRefGroup = 48A3732E1E40482100498415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48A3732C1E40482100498415 /* BoozyByKarl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48A3732B1E40482100498415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A3733E1E40482100498415 /* LaunchScreen.storyboard in Resources */,
+				48A3733B1E40482100498415 /* Assets.xcassets in Resources */,
+				48A373361E40482100498415 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48A373291E40482100498415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A373331E40482100498415 /* MainCocktailsController.swift in Sources */,
+				48B7718E1E47A99200DC373B /* Ingredient+CoreDataProperties.swift in Sources */,
+				48D08D341E4906EB00C6F633 /* DataFileInitializer.swift in Sources */,
+				48A373391E40482100498415 /* BoozyByKarl.xcdatamodeld in Sources */,
+				48B771921E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift in Sources */,
+				48F158461E69C05500F06CA3 /* NotesCell.swift in Sources */,
+				48B771901E47A99200DC373B /* Cocktail+CoreDataProperties.swift in Sources */,
+				48A373311E40482100498415 /* AppDelegate.swift in Sources */,
+				48F158521E69CB7700F06CA3 /* CocktailDetailImageCell.swift in Sources */,
+				48B7718F1E47A99200DC373B /* Cocktail+CoreDataClass.swift in Sources */,
+				48F22E311E4B6972002F5F67 /* MainWineController.swift in Sources */,
+				48F1584C1E69C7AC00F06CA3 /* CocktailDetailHeaderCell.swift in Sources */,
+				48D08D321E48403300C6F633 /* CocktailDetailController.swift in Sources */,
+				48B771911E47A99200DC373B /* CocktailCategory+CoreDataClass.swift in Sources */,
+				48F158501E69C86500F06CA3 /* BaseCellDetail.swift in Sources */,
+				48F1584A1E69C09500F06CA3 /* IngredientsCell.swift in Sources */,
+				48B7718D1E47A99200DC373B /* Ingredient+CoreDataClass.swift in Sources */,
+				48A3734B1E4048E900498415 /* CategoryCell.swift in Sources */,
+				48F1584E1E69C7D100F06CA3 /* CocktailImagesCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48A373341E40482100498415 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A373351E40482100498415 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48A3733C1E40482100498415 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A3733D1E40482100498415 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48A373401E40482100498415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Kuhn (FTBN7YGBDD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48A373411E40482100498415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Kuhn (FTBN7YGBDD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48A373431E40482100498415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SG455MX5PS;
+				INFOPLIST_FILE = BoozyByKarl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BadPisco.Karl.BoozyByKarl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		48A373441E40482100498415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SG455MX5PS;
+				INFOPLIST_FILE = BoozyByKarl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BadPisco.Karl.BoozyByKarl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48A373281E40482100498415 /* Build configuration list for PBXProject "BoozyByKarl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A373401E40482100498415 /* Debug */,
+				48A373411E40482100498415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A373421E40482100498415 /* Build configuration list for PBXNativeTarget "BoozyByKarl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A373431E40482100498415 /* Debug */,
+				48A373441E40482100498415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48A373371E40482100498415 /* BoozyByKarl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48A373381E40482100498415 /* BoozyByKarl.xcdatamodel */,
+			);
+			currentVersion = 48A373381E40482100498415 /* BoozyByKarl.xcdatamodel */;
+			path = BoozyByKarl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 48A373251E40482100498415 /* Project object */;
+}
