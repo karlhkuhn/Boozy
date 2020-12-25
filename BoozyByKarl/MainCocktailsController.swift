@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainCocktailsController.swift
 //  BoozyByKarl
 //
 //  Created by Karl H Kuhn on 1/30/17.
@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-
 
 class MainCocktailsController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -29,7 +28,7 @@ class MainCocktailsController: UICollectionViewController, UICollectionViewDeleg
         collectionView?.register(MainCocktailsControllerHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
     
-    
+    //MARK: CollectionView Delegate Methods
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cocktailCategories.count
     }
@@ -41,7 +40,6 @@ class MainCocktailsController: UICollectionViewController, UICollectionViewDeleg
         cell.nameLabel.text = cocktailCategories[indexPath.item].name
         cell.mainCocktailsController = self
         return cell
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -63,40 +61,9 @@ class MainCocktailsController: UICollectionViewController, UICollectionViewDeleg
         cocktailDetailController.currentCocktail = cocktail
         navigationController?.pushViewController(cocktailDetailController, animated: true)
     }
-    
-    
-    
-    
-    
-    
-    
-    //SETUP COCKTAIL DATABASE
-    
-    
-    
-    
 }
 
-class MainCocktailsControllerHeader: BaseCellDetail {
-    
-    let imageView: UIImageView = {
-        let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "boozyByKarlLogo")
-        iv.contentMode = .scaleAspectFill
-        return iv
-    }()
-    
-    override func setupViews() {
-        backgroundColor = UIColor.white
-        
-        addSubview(imageView)
-        
-        addConstraintsWithFormat(format: "H:|-165-[v0(100)]|", views: imageView)
-        addConstraintsWithFormat(format: "V:|-14-[v0(100)]|", views: imageView)
-        
-        backgroundColor = .white
-    }
-}
+
 
 
 

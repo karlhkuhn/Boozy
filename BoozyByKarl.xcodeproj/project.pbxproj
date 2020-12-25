@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A089D4C25961E0E007554E9 /* MainCocktailsControllerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */; };
 		48A373311E40482100498415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373301E40482100498415 /* AppDelegate.swift */; };
 		48A373331E40482100498415 /* MainCocktailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373321E40482100498415 /* MainCocktailsController.swift */; };
 		48A373361E40482100498415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A373341E40482100498415 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsControllerHeader.swift; sourceTree = "<group>"; };
 		48A3732D1E40482100498415 /* BoozyByKarl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoozyByKarl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A373301E40482100498415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A373321E40482100498415 /* MainCocktailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				48A373321E40482100498415 /* MainCocktailsController.swift */,
+				0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */,
 				48A373491E4048E900498415 /* CategoryCell.swift */,
 				48F158441E69C03700F06CA3 /* DetailControllerCells */,
 			);
@@ -238,6 +241,7 @@
 				48D08D341E4906EB00C6F633 /* DataFileInitializer.swift in Sources */,
 				48A373391E40482100498415 /* BoozyByKarl.xcdatamodeld in Sources */,
 				48B771921E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift in Sources */,
+				0A089D4C25961E0E007554E9 /* MainCocktailsControllerHeader.swift in Sources */,
 				48F158461E69C05500F06CA3 /* NotesCell.swift in Sources */,
 				48B771901E47A99200DC373B /* Cocktail+CoreDataProperties.swift in Sources */,
 				48A373311E40482100498415 /* AppDelegate.swift in Sources */,
