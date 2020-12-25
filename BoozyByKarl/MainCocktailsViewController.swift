@@ -1,5 +1,5 @@
 //
-//  MainCocktailsController.swift
+//  MainCocktailsViewController.swift
 //  BoozyByKarl
 //
 //  Created by Karl H Kuhn on 1/30/17.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MainCocktailsController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class MainCocktailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let isFirstLaunch = UserDefaults.isFirstLaunch()

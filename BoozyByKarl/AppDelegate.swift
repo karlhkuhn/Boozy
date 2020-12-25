@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window?.makeKeyAndVisible()
 		
 		let layout = UICollectionViewFlowLayout()
-		let mainCocktailsController = MainCocktailsController(collectionViewLayout: layout)
+		let mainCocktailsController = MainCocktailsViewController(collectionViewLayout: layout)
 		let mainWineController = MainWineController(collectionViewLayout: layout)
 
 		let cocktailsNavController = UINavigationController(rootViewController: mainCocktailsController)

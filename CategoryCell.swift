@@ -11,7 +11,7 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 	
-	var mainCocktailsController: MainCocktailsController?
+	var mainCocktailsController: MainCocktailsViewController?
 	var cocktailCategory: CocktailCategory?
 
 	
