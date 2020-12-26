@@ -41,7 +41,7 @@ class CocktailDetailHeaderCell: BaseCellDetail {
 	let nameLabel: UILabel = {
 		let label = UILabel()
 		label.text = "TEST"
-		label.font = UIFont.systemFont(ofSize: 20)
+		label.font = UIFont.systemFont(ofSize: 32)
 		return label
 	}()
 	
@@ -62,7 +62,7 @@ class CocktailDetailHeaderCell: BaseCellDetail {
 		addConstraintsWithFormat(format: "H:|-14-[v0(100)]-8-[v1]|", views: imageView, nameLabel)
 		addConstraintsWithFormat(format: "V:|-14-[v0(100)]", views: imageView)
 		
-		addConstraintsWithFormat(format: "V:|-14-[v0(20)]", views: nameLabel)
+		addConstraintsWithFormat(format: "V:|-14-[v0(100)]", views: nameLabel)
 		
 		addConstraintsWithFormat(format: "H:|-40-[v0]-40-|", views: segmentedControl)
 		addConstraintsWithFormat(format: "V:[v0(34)]-8-|", views: segmentedControl)

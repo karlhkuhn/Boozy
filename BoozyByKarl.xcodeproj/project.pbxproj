@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A089D4C25961E0E007554E9 /* MainCocktailsControllerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */; };
 		0A089D5025961FA3007554E9 /* GlobalReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A089D4F25961FA3007554E9 /* GlobalReferences.swift */; };
+		0A089D5A25965557007554E9 /* unusualNegroni.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5925965557007554E9 /* unusualNegroni.mov */; };
+		0A089D5F25965735007554E9 /* unusualNegroni3.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5D25965733007554E9 /* unusualNegroni3.mov */; };
+		0A089D6A25976DD9007554E9 /* unusualNegroni2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5E25965735007554E9 /* unusualNegroni2.mov */; };
 		48A373311E40482100498415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373301E40482100498415 /* AppDelegate.swift */; };
 		48A373331E40482100498415 /* MainCocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373321E40482100498415 /* MainCocktailsViewController.swift */; };
 		48A373361E40482100498415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A373341E40482100498415 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsControllerHeader.swift; sourceTree = "<group>"; };
 		0A089D4F25961FA3007554E9 /* GlobalReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalReferences.swift; sourceTree = "<group>"; };
+		0A089D5925965557007554E9 /* unusualNegroni.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni.mov; sourceTree = "<group>"; };
+		0A089D5D25965733007554E9 /* unusualNegroni3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni3.mov; sourceTree = "<group>"; };
+		0A089D5E25965735007554E9 /* unusualNegroni2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni2.mov; sourceTree = "<group>"; };
 		48A3732D1E40482100498415 /* BoozyByKarl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoozyByKarl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A373301E40482100498415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A373321E40482100498415 /* MainCocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 		48A3732F1E40482100498415 /* BoozyByKarl */ = {
 			isa = PBXGroup;
 			children = (
+				0A089D5925965557007554E9 /* unusualNegroni.mov */,
+				0A089D5E25965735007554E9 /* unusualNegroni2.mov */,
+				0A089D5D25965733007554E9 /* unusualNegroni3.mov */,
 				48A373301E40482100498415 /* AppDelegate.swift */,
 				48F22E2F1E4B660C002F5F67 /* Wine */,
 				48F22E2E1E4B65F3002F5F67 /* Cocktails */,
@@ -132,9 +141,9 @@
 		48D08D351E49080B00C6F633 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				48A373371E40482100498415 /* BoozyByKarl.xcdatamodeld */,
 				48D08D331E4906EA00C6F633 /* DataFileInitializer.swift */,
 				0A089D4F25961FA3007554E9 /* GlobalReferences.swift */,
+				48A373371E40482100498415 /* BoozyByKarl.xcdatamodeld */,
 				0A089D5225962104007554E9 /* Core Data Objects */,
 			);
 			name = Data;
@@ -234,9 +243,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A089D6A25976DD9007554E9 /* unusualNegroni2.mov in Resources */,
 				48A3733E1E40482100498415 /* LaunchScreen.storyboard in Resources */,
 				48A3733B1E40482100498415 /* Assets.xcassets in Resources */,
+				0A089D5F25965735007554E9 /* unusualNegroni3.mov in Resources */,
 				48A373361E40482100498415 /* Main.storyboard in Resources */,
+				0A089D5A25965557007554E9 /* unusualNegroni.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 
 import UIKit
 
+
 class CocktailDetailController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var currentCocktail: Cocktail? {
@@ -74,6 +75,7 @@ class CocktailDetailController: UICollectionViewController, UICollectionViewDele
                 cell.textView.isEditable = false
                 return cell
             }
+        //SETUP FOR THIRD ROW - CocktailImageCell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imagesViewId, for: indexPath) as! CocktailImagesCell
             return cell

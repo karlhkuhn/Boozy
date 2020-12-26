@@ -180,6 +180,7 @@ extension MainCocktailsViewController {
 		newCocktail.image = imageName
 		newCocktail.desc = theDescription
 		newCocktail.ingredientDict = cocktailIngredients as NSObject
+        newCocktail.movieName = "unusalNegroni"
 		
 //		let cocktailIngredientKeys = Array(cocktailIngredients.keys)
 //		print(cocktailIngredientKeys[0])
@@ -193,6 +194,8 @@ extension MainCocktailsViewController {
 		cocktails.append(newCocktail)
 		
 	}
+    
+    
 	
 	func insertCocktailCategoryIntoContext(categroyName: String, categoryKeyNumber: Int) -> CocktailCategory {
 		let entity = NSEntityDescription.entity(forEntityName: "CocktailCategory", in: context)

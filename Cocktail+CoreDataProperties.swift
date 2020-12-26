@@ -18,6 +18,7 @@ extension Cocktail {
 
 	@NSManaged public var desc: String?
     @NSManaged public var image: String
+    @NSManaged public var movieName: String?
     @NSManaged public var ingredientsCount: Int16
     @NSManaged public var name: String
     @NSManaged public var spirit: Int16

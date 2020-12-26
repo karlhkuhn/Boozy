@@ -60,13 +60,22 @@ class CocktailImagesCell: BaseCellDetail, UICollectionViewDataSource, UICollecti
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imagesCellId, for: indexPath) as! CocktailDetailImageCell
 		if indexPath.item == 0 {
-			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage1")
+            cell.name = "unusualNegroni"
+            cell.type = "mov"
+
+//			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage1")
 		}
 		if indexPath.item == 1 {
-			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage2")
+            cell.name = "unusualNegroni2"
+            cell.type = "mov"
+
+//			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage2")
 		}
 		if indexPath.item == 2 {
-			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage3")
+            cell.name = "unusualNegroni3"
+            cell.type = "mov"
+
+//			cell.cocktailAdditionalImage.image = #imageLiteral(resourceName: "supplimentImage3")
 		}
 		return cell
 	}

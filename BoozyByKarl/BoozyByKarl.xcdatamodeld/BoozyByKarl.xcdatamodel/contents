@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Cocktail" representedClassName="Cocktail" syncable="YES">
-        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image" attributeType="String" syncable="YES"/>
-        <attribute name="ingredientDict" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="ingredientsCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" attributeType="String" syncable="YES"/>
-        <attribute name="spirit" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="categoryForCocktail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CocktailCategory" inverseName="cocktailInCategory" inverseEntity="CocktailCategory" syncable="YES"/>
-        <relationship name="includesIngredient" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="forCocktail" inverseEntity="Ingredient" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="image" attributeType="String"/>
+        <attribute name="ingredientDict" optional="YES" attributeType="Transformable"/>
+        <attribute name="ingredientsCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="movieName" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="spirit" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="categoryForCocktail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CocktailCategory" inverseName="cocktailInCategory" inverseEntity="CocktailCategory"/>
+        <relationship name="includesIngredient" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="forCocktail" inverseEntity="Ingredient"/>
     </entity>
     <entity name="CocktailCategory" representedClassName="CocktailCategory" syncable="YES">
-        <attribute name="category_key" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="cocktailInCategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cocktail" inverseName="categoryForCocktail" inverseEntity="Cocktail" syncable="YES"/>
+        <attribute name="category_key" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="cocktailInCategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cocktail" inverseName="categoryForCocktail" inverseEntity="Cocktail"/>
     </entity>
     <entity name="Ingredient" representedClassName="Ingredient" syncable="YES">
-        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="forCocktail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cocktail" inverseName="includesIngredient" inverseEntity="Cocktail" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="forCocktail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cocktail" inverseName="includesIngredient" inverseEntity="Cocktail"/>
     </entity>
     <elements>
-        <element name="Cocktail" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Cocktail" positionX="-63" positionY="-18" width="128" height="178"/>
         <element name="CocktailCategory" positionX="-54" positionY="18" width="128" height="90"/>
         <element name="Ingredient" positionX="-54" positionY="135" width="128" height="90"/>
     </elements>
