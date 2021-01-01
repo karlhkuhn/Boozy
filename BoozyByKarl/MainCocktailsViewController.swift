@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 
 class MainCocktailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -68,7 +67,8 @@ class MainCocktailsViewController: UICollectionViewController, UICollectionViewD
     
     //TODO: Needs Implimentation
     @objc func addCocktail() {
-        
+        let vc = AddCocktailViewController()
+        self.present(vc, animated: true)
     }
     //TODO: Needs Implimentation
     @objc func searchCocktails() {

@@ -33,6 +33,12 @@ extension MainCocktailsViewController {
 		cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Rum", categoryKeyNumber: 2))
 		cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Whiskey", categoryKeyNumber: 3))
 		cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Tequila", categoryKeyNumber: 4))
+        cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Vodka", categoryKeyNumber: 5))
+        cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Congac", categoryKeyNumber: 6))
+        cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Burbon", categoryKeyNumber: 7))
+        cocktailCategories.append(insertCocktailCategoryIntoContext(categroyName: "Pisco", categoryKeyNumber: 8))
+
+
 	}
 	
 	func setupCocktailItems() {
