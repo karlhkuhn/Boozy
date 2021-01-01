@@ -21,6 +21,9 @@ class MainCocktailsViewController: UICollectionViewController, UICollectionViewD
         
         setupCocktailDatabase()
         
+        let addCocktaliButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCocktail))
+        let searchhCocktailButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchCocktails))
+        navigationItem.rightBarButtonItems = [addCocktaliButtonItem, searchhCocktailButtonItem]
         collectionView?.backgroundColor = .black
         
         collectionView?.backgroundColor = UIColor.white
@@ -60,6 +63,14 @@ class MainCocktailsViewController: UICollectionViewController, UICollectionViewD
         let cocktailDetailController = CocktailDetailController(collectionViewLayout: layout)
         cocktailDetailController.currentCocktail = cocktail
         navigationController?.pushViewController(cocktailDetailController, animated: true)
+    }
+    
+    @objc func addCocktail() {
+        
+    }
+    
+    @objc func searchCocktails() {
+        
     }
 }
 

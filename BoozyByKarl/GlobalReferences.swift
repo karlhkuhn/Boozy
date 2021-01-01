@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let karl = URL(fileURLWithPath: "www.twitter.com")
+
 var cocktailCategories = [CocktailCategory]()
 var cocktails = [Cocktail]()
 var ingredientDictionary = [String: Ingredient]()

@@ -44,9 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let wineNavController = UINavigationController(rootViewController: mainWineController)
 
 
-//		let tabBarController = UITabBarController()
-//		tabBarController.viewControllers = [cocktailsNavController, wineNavController]
-		window?.rootViewController = cocktailsNavController
+		let tabBarController = UITabBarController()
+		tabBarController.viewControllers = [cocktailsNavController, wineNavController]
+		window?.rootViewController = tabBarController
 		
 		mainCocktailsController.tabBarItem = UITabBarItem(title: "Cocktails", image: #imageLiteral(resourceName: "cocktailTabImage"), tag: 1)
 		mainWineController.tabBarItem = UITabBarItem(title: "Wines", image:#imageLiteral(resourceName: "wineTabImage"), tag: 2)

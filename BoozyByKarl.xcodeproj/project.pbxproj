@@ -12,6 +12,8 @@
 		0A089D5A25965557007554E9 /* unusualNegroni.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5925965557007554E9 /* unusualNegroni.mov */; };
 		0A089D5F25965735007554E9 /* unusualNegroni3.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5D25965733007554E9 /* unusualNegroni3.mov */; };
 		0A089D6A25976DD9007554E9 /* unusualNegroni2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A089D5E25965735007554E9 /* unusualNegroni2.mov */; };
+		0A52452E259ECC5600DF1FD4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A52452D259ECC5600DF1FD4 /* UIViewControllerExtension.swift */; };
+		0A92A97125983BEA0001C9FB /* CocktailDetailVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92A97025983BEA0001C9FB /* CocktailDetailVideoCell.swift */; };
 		48A373311E40482100498415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373301E40482100498415 /* AppDelegate.swift */; };
 		48A373331E40482100498415 /* MainCocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A373321E40482100498415 /* MainCocktailsViewController.swift */; };
 		48A373361E40482100498415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A373341E40482100498415 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		0A089D5925965557007554E9 /* unusualNegroni.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni.mov; sourceTree = "<group>"; };
 		0A089D5D25965733007554E9 /* unusualNegroni3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni3.mov; sourceTree = "<group>"; };
 		0A089D5E25965735007554E9 /* unusualNegroni2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = unusualNegroni2.mov; sourceTree = "<group>"; };
+		0A52452D259ECC5600DF1FD4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		0A92A97025983BEA0001C9FB /* CocktailDetailVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailVideoCell.swift; sourceTree = "<group>"; };
 		48A3732D1E40482100498415 /* BoozyByKarl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoozyByKarl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A373301E40482100498415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A373321E40482100498415 /* MainCocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCocktailsViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,13 @@
 			name = "Core Data Objects";
 			sourceTree = "<group>";
 		};
+		0A52452C259ECC2B00DF1FD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		48A373241E40482100498415 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +133,7 @@
 				48F22E2F1E4B660C002F5F67 /* Wine */,
 				48F22E2E1E4B65F3002F5F67 /* Cocktails */,
 				48D08D351E49080B00C6F633 /* Data */,
+				0A52452C259ECC2B00DF1FD4 /* Extensions */,
 				48A3733A1E40482100498415 /* Assets.xcassets */,
 				48A3733C1E40482100498415 /* LaunchScreen.storyboard */,
 				48A3733F1E40482100498415 /* Info.plist */,
@@ -159,6 +171,7 @@
 				48F158451E69C05500F06CA3 /* NotesCell.swift */,
 				48F1584D1E69C7D100F06CA3 /* CocktailImagesCell.swift */,
 				48F158511E69CB7700F06CA3 /* CocktailDetailImageCell.swift */,
+				0A92A97025983BEA0001C9FB /* CocktailDetailVideoCell.swift */,
 			);
 			name = DetailControllerCells;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 		48F22E2E1E4B65F3002F5F67 /* Cocktails */ = {
 			isa = PBXGroup;
 			children = (
+				0A52452D259ECC5600DF1FD4 /* UIViewControllerExtension.swift */,
 				48A373321E40482100498415 /* MainCocktailsViewController.swift */,
 				0A089D4B25961E0E007554E9 /* MainCocktailsControllerHeader.swift */,
 				48A373491E4048E900498415 /* CategoryCell.swift */,
@@ -266,9 +280,11 @@
 				48A373391E40482100498415 /* BoozyByKarl.xcdatamodeld in Sources */,
 				48B771921E47A99200DC373B /* CocktailCategory+CoreDataProperties.swift in Sources */,
 				0A089D4C25961E0E007554E9 /* MainCocktailsControllerHeader.swift in Sources */,
+				0A52452E259ECC5600DF1FD4 /* UIViewControllerExtension.swift in Sources */,
 				48F158461E69C05500F06CA3 /* NotesCell.swift in Sources */,
 				48B771901E47A99200DC373B /* Cocktail+CoreDataProperties.swift in Sources */,
 				48A373311E40482100498415 /* AppDelegate.swift in Sources */,
+				0A92A97125983BEA0001C9FB /* CocktailDetailVideoCell.swift in Sources */,
 				48F158521E69CB7700F06CA3 /* CocktailDetailImageCell.swift in Sources */,
 				48B7718F1E47A99200DC373B /* Cocktail+CoreDataClass.swift in Sources */,
 				48F22E311E4B6972002F5F67 /* MainWineController.swift in Sources */,
